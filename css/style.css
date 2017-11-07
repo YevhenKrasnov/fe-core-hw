@@ -1,12 +1,23 @@
-.simple-list {
-  width: 410px;
-  background-color: red;
+html {
+  background: url('http://www.planwallpaper.com/static/images/star_wars_battlefront_dice.0.jpg')
+  no-repeat center center fixed;
+  background-size: cover;
 }
 
-.simple-list li {
+.wrapper {
   display: inline-block;
-  width: 180px;
-  padding-left: 10px;
-  padding-right: 10px;
-  list-style: none;
+  width: 410px;
+  height: auto;
+  margin: 100px 5px;
+  padding: 30px;
+  background-color: #ffffff;
+}
+
+h2, h3, h4 {
+  color: #263555;
+}
+
+ul {
+  color: #263555;
+  list-style-type: none;
 }
