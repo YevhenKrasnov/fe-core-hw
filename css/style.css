@@ -1,0 +1,12 @@
+.simple-list {
+  width: 410px;
+  background-color: red;
+}
+
+.simple-list li {
+  display: inline-block;
+  width: 180px;
+  padding-left: 10px;
+  padding-right: 10px;
+  list-style: none;
+}
