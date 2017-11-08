@@ -1,0 +1,25 @@
+.first {
+  font-family: 'Lato';
+  width: 480px;
+  padding: 10px;
+  background-color: #e6e6fa;
+}
+
+h2, h3, ul {
+  color: #263555;
+}
+
+.second {
+  font-family: 'Lato';
+  width: 480px;
+  padding: 10px;
+  background-color: #e6e6fa;
+}
+
+.third {
+  font-family: 'Lato';
+  width: 480px;
+  padding: 10px;
+  background-color: #e6e6fa;
+  list-style-image: url('../../img/module-3-task-5-list.jpg');
+}
