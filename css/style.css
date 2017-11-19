@@ -56,7 +56,6 @@ ol {
 
 ol li::before {
   content: '';
-  display: block;
   width: 30px;
   height: 30px;
   border-radius: 50%;
@@ -114,7 +113,7 @@ ol li::before {
     display: block;
     position: absolute;
     width: 0;
-    border-top: 22px solid #fcfafa;
+    border-top: 22px solid #000;
     border-left: 22px solid transparent;
     border-right: 22px solid transparent;
     bottom: -22px;
