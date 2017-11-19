@@ -1,28 +1,147 @@
-html {
+body {
   background: url('http://www.planwallpaper.com/static/images/star_wars_battlefront_dice.0.jpg')
-  no-repeat center center fixed;
+  no-repeat center;
   background-size: cover;
 }
 
 .wrapper {
   font-family: 'Lato';
-  width: 420px;
+  width: 1000px;
   height: auto;
   margin: 100px auto;
   padding: 30px;
   background-color: #f5f5f5;
 }
 
-h2, h3, h4, ul {
+h2, h3, h4, ul, p.blue {
   color: #263555;
 }
 
-.line {
-  width: 380px;
-  border-bottom: 1px solid #000000;
+img {
+  display: inline-block;
+  margin-right: 40px;
+  float: left;
 }
 
 ul {
-  column-count: 2;
-  list-style-type: none;
+  display: inline-block;
+  width: auto;
+  list-style-image: url('../img/arrow.png');
+  line-height: 30px;
+}
+
+.line {
+  border-bottom: 1px solid #000000;
+}
+
+.one {
+  display: inline-block;
+  width: 710px;
+  margin-right: 50px;
+  margin-bottom: 40px;
+}
+
+.two {
+  display: inline-block;
+  width: 200px;
+  margin: 0 10px;
+  vertical-align: top;
+
+}
+
+ol {
+  display: block;
+  list-style: none;
+}
+
+ol li::before {
+  content: '';
+  display: block;
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  float: left;
+  background-color: #38afe5;
+  position: relative;
+  right: 40px;
+  bottom: 3px;
+}
+
+.first::before,
+.second::before,
+.third::before {
+  text-align: center;
+}
+
+.first::before {
+  content: '1';
+}
+
+.second::before {
+  content: '2';
+}
+
+.third::before {
+  content: '3';
+}
+
+.three {
+  display: inline-block;
+  width: 700px;
+  margin-right: 50px;
+  margin-top: 40px;
+}
+
+.four {
+  display: inline-block;
+  width: 200px;
+  height: 100%;
+  margin: 40px 10px;
+  vertical-align: top;
+}
+
+.frame {
+    position: relative;
+    width: 190px;
+    height: 130  px;
+    background-color: #fcfafa;
+    border: 1px solid #000;
+    border-radius: 2%;
+}
+
+.frame::before {
+    content: '';
+    display: block;
+    position: absolute;
+    width: 0;
+    border-top: 22px solid #fcfafa;
+    border-left: 22px solid transparent;
+    border-right: 22px solid transparent;
+    bottom: -22px;
+    left: 75px;
+}
+
+.quotes {
+  padding: 10px;
+}
+
+.quotes::before {
+  content: '\201c';
+}
+
+.quotes::after {
+  content: '\201d'
+}
+
+.name {
+  margin: 50px 0;
+  text-align: center;
+}
+
+.blue {
+  font-weight: 700;
+}
+
+.size {
+  font-size: 90%;
 }
