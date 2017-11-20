@@ -1,5 +1,5 @@
 body {
-  background: url('http://www.planwallpaper.com/static/images/star_wars_battlefront_dice.0.jpg')
+  background: url('../img/background.jpg')
   no-repeat center;
   background-size: cover;
 }
@@ -7,7 +7,6 @@ body {
 .wrapper {
   font-family: 'Lato';
   width: 1000px;
-  height: auto;
   margin: 100px auto;
   padding: 30px;
   background-color: #f5f5f5;
@@ -21,13 +20,6 @@ img {
   display: inline-block;
   margin-right: 40px;
   float: left;
-}
-
-ul {
-  display: inline-block;
-  width: auto;
-  list-style-image: url('../img/arrow.png');
-  line-height: 30px;
 }
 
 .line {
@@ -52,24 +44,22 @@ ul {
 ol {
   display: block;
   list-style: none;
+  padding: 0;
 }
 
-ol li::before {
+ol li{
+  padding-left: 40px;
+}
+
+ol::before {
   content: '';
   width: 30px;
   height: 30px;
   border-radius: 50%;
   float: left;
   background-color: #38afe5;
-  position: relative;
-  right: 40px;
-  bottom: 3px;
-}
-
-.first::before,
-.second::before,
-.third::before {
   text-align: center;
+  line-height: 25px;
 }
 
 .first::before {
@@ -91,6 +81,13 @@ ol li::before {
   margin-top: 40px;
 }
 
+ul {
+  display: inline-block;
+  width: auto;
+  list-style-image: url('../img/arrow.png');
+  line-height: 30px;
+}
+
 .four {
   display: inline-block;
   width: 200px;
@@ -100,24 +97,36 @@ ol li::before {
 }
 
 .frame {
-    position: relative;
-    width: 190px;
-    height: 130  px;
-    background-color: #fcfafa;
-    border: 1px solid #000;
-    border-radius: 2%;
+  position: relative;
+  width: 190px;
+  height: 130  px;
+  background-color: #fcfafa;
+  border: 1px solid #000;
+  border-radius: 2%;
 }
 
-.frame::before {
+.frame::before,
+.frame::after {
     content: '';
     display: block;
     position: absolute;
     width: 0;
+}
+
+.frame::before {
     border-top: 22px solid #000;
     border-left: 22px solid transparent;
     border-right: 22px solid transparent;
     bottom: -22px;
-    left: 75px;
+    left: 72px;
+}
+
+.frame::after {
+    border-top: 20px solid #fcfafa;
+    border-left: 20px solid transparent;
+    border-right: 20px solid transparent;
+    bottom: -20px;
+    left: 74px;
 }
 
 .quotes {
