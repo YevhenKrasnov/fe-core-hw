@@ -1,6 +1,7 @@
 body {
-  background: url('../img/beach.jpg') no-repeat;
+  background: url(../img/Beach.jpg) no-repeat;
   background-size: cover;
+  font-family: Arial, sans-serif;
 }
 
 .wrapper {
