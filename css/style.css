@@ -1,7 +1,7 @@
 body {
-  background: url(../img/Beach.jpg) no-repeat;
+  background: url('../img/Beach.jpg') no-repeat;
   background-size: cover;
-  font-family: Arial, sans-serif;
+  font-family: 'Pathway Gothic One', sans-serif;
 }
 
 .wrapper {
@@ -13,6 +13,7 @@ body {
   background: hollow;
   width: 1024px;
   margin: 0 auto 50px;
+  font-size: 25px;
 }
 
 .menu {
@@ -41,6 +42,7 @@ body {
   list-style: none;
   background: #fff;
   border-radius: 2%;
+  width: 45px;
   margin-top: 20px;
   padding: 10px 5px;
   color: #263555;
@@ -53,7 +55,7 @@ body {
   border-bottom: 5px solid #fff;
   border-left: 7px solid transparent;
   border-right: 7px solid transparent;
-  bottom: 62px;
+  bottom: 77px;
   left: 20px;
 }
 
@@ -66,18 +68,19 @@ body {
   margin-top: 2px;
   font-size: 11px;
   text-align: center;
+  font-size: 15px;
 }
 
 .journey {
   font-family: Dorsa, sans-serif;
   color: #263555;
-  font-size: 20px;
+  font-size: 25px;
   background-color: #fff;
-  width: 100px;
-  height: 100px;
+  width: 130px;
+  height: 130px;
   border-radius: 50%;
   text-align: center;
-  line-height: 45px;
+  line-height: 70px;
 }
 
 .fon {
@@ -105,20 +108,20 @@ body {
 }
 
 .white {
-  width: 330px;
+  width: 250px;
   height: 60px;
   background-color: #fff;
-  font-size: 20px;
+  font-size: 25px;
   letter-spacing: -1px;
   color: #263555;
   top: 500px;
 }
 
 .blue {
-  width: 400px;
+  width: 350px;
   height: 60px;
   background-color: #38afe5;
-  font-size: 28px;
+  font-size: 35px;
   color: #fff;
   top: 560px;
 
@@ -126,21 +129,23 @@ body {
 
 .square1,
 .square2 {
+  position: relative;
   width: 50px;
   height: 100px;
   background-color: #38afe5;
   border-radius: 50%;
-  top: 750px;
 }
 
 .square1{
   border-radius: 0 100% 100% 0 / 0 50% 50% 0;
-  left: 250px;
+  top: 450px;
+  left: 100px;
 }
 
 .square2{
   border-radius: 100% 0 0 100% / 50% 0 0 50%;
-  left: 200px;
+  top: 350px;
+  left: 50px;
 }
 
 .square1::before,
@@ -148,6 +153,11 @@ body {
   content: '';
   color: white;
   line-height: 100px;
+}
+
+.square1:hover,
+.square2:hover {
+  opacity: 0.8;
 }
 
 button {
@@ -159,6 +169,8 @@ button {
 h2 {
   margin-top: 50px;
   color: #263555;
+  font-size: 30px;
+  font-weight: 400;
 }
 
 .destination {
@@ -189,7 +201,7 @@ h2 {
 }
 
 .inside {
-  width: 170px;
+  width: 150px;
   height: 265px;
   padding: 10px;
   background-color: #193149;
@@ -208,12 +220,19 @@ h2 {
 
 h3 {
   text-align: center;
+  font-size: 30px;
+  font-weight: 400;
+}
+
+p {
+  font-size: 13px;
+  letter-spacing: 1px;
 }
 
 .details {
   position: relative;
   top:80px;
-  left: 90px;
+  left: 70px;
   width: 70px;
   height: 20px;
   border-radius: 17%;
